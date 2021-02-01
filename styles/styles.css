@@ -1,0 +1,35 @@
+@import './reset.css';
+
+/* navbar */
+.navbar {
+  background: #3E3C3C;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.navbox {
+  display: flex;
+  justify-content: center;
+}
+
+.navcontainer {
+  display: flex;
+  width: 80%;
+  padding: 20px;
+}
+
+.navcontainer > :last-child {
+  margin-left: auto;
+}
+
+.name {
+  padding: 10px 12px;
+}
+
+.routes {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 12px;
+}
+/* navbar */
