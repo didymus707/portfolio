@@ -12,6 +12,11 @@
   z-index: 800;
 }
 
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .navbox {
   display: flex;
   justify-content: center;
@@ -32,7 +37,7 @@
 }
 
 .routes {
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   padding: 10px 12px;
