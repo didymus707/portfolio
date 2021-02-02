@@ -260,4 +260,23 @@
 .first, .second, .third {
   flex: 1 1 30%;
 }
+
+/* about me seection */
+.bout-me {
+  display: flex;
+  margin: 60px 0;
+}
+
+.about-head {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bout-text {
+  padding: 25px 0;
+}
+
+.get-project {
+  width: 130px;
+}
 /* main */
