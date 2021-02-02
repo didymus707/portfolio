@@ -270,6 +270,7 @@
 .about-head {
   max-width: 1100px;
   margin: 0 auto;
+  width: 30%;
 }
 
 .bout-text {
@@ -278,5 +279,9 @@
 
 .get-project {
   width: 130px;
+}
+
+.about-image {
+  width: 48%;
 }
 /* main */
