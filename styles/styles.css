@@ -132,7 +132,7 @@
 }
 
 .portfolio-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 100px auto;
 }
 
@@ -227,7 +227,8 @@
 }
 
 .list div {
-  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%);
+  /* background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%); */
+  border: 1px solid blue;
 }
 
 .list-app-name {
