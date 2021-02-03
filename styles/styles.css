@@ -328,4 +328,63 @@ hr, .skills-con {
 .about-image {
   width: 48%;
 }
+
+/* skills con */
+.skills-con {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lang-header, .frame-header, .skills-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.diamond {
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: #F55800;
+  position: relative;
+  top: -8px;
+}
+
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top-color: #F55800;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background: #F55800;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F55800;
+}
+
+.lang-title, .frame-title, .skills-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.skills-con li {
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
 /* main */
