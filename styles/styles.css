@@ -36,8 +36,12 @@
   padding: 10px 12px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .routes {
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 10px 12px;
@@ -485,3 +489,52 @@ hr, .skills-con {
   filter: brightness(0.5);
 }
 /* main */
+
+@media only screen and (min-width: 320px) {
+  .routes-container {
+  }
+  
+  .routes {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  
+  .top, .mid, .last {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .top {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .mid {opacity: 0;}
+  
+  .change .last {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .routes-container {
+    width: 35%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .routes {
+    display: flex;
+  }
+}
