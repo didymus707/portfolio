@@ -48,15 +48,23 @@
 /* main */
 .main {
   position: relative;
-  top: 72px;
+  top: 75px;
 }
 
-.section {
+/* top-section */
+.top-section {
   background: #1C1A19;
   color: #fff;
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
+
+/* .headline {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* aside */
 .social-contacts {
@@ -76,12 +84,6 @@
 /* aside */
 
 /* article */
-.headline {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .headline-container {
   width: 50%;
   display: flex;
@@ -525,26 +527,18 @@ hr, .skills-con {
     transition: 0.5s;
   }
 
-  .overlay-content {
-    position: relative;
-    top: 25%;
+  .overlay-width {
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
   }
 
-  /* .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
+  .overlay a {
     color: #818181;
-    display: block;
     transition: 0.3s;
-  } */
+  } 
 
-  /* .overlay a:hover, .overlay a:focus {
+  .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  } */
+  }
 
   .routes {
     display: flex;
@@ -560,6 +554,16 @@ hr, .skills-con {
     border-bottom: 1px solid #f1f1f1;
     padding: 13px;
     width: 80%;
+  }
+
+  /* main */
+  .main {
+    top: 81px;
+  }
+
+  /* top-section */
+  .top-section {
+    width: 100%;
   }
 }
 

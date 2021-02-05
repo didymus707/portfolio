@@ -9,8 +9,7 @@ const toggleChange = () => {
 };
 
 const openOrCloseOverlay = () => {
-  overlay.style.width === '100%' ?
-    overlay.style.width = '0%' : overlay.style.width = '100%';
+  overlay.classList.toggle('overlay-width')
 }
 
 menuIcon.addEventListener('click', () => {
