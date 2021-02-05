@@ -11,8 +11,15 @@ const openOrCloseOverlay = () => {
     overlay.style.width = '0%' : overlay.style.width = '100%';
 }
 
-
 menuIcon.addEventListener('click', () => {
   toggleChange();
   openOrCloseOverlay();
+});
+
+routes.addEventListener('click', e => {
+  const links = ['Home', 'Portfolio', 'About', 'Contact'];
+  if (links.includes(e.target.textContent)) {
+    toggleChange();
+    overlay.style.width = '0%'
+  }
 });
