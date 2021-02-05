@@ -40,11 +40,8 @@
   display: none;
 }
 
-.routes {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 12px;
+.far {
+  padding-left: 8px;
 }
 /* navbar */
 
@@ -490,20 +487,12 @@ hr, .skills-con {
 }
 /* main */
 
-@media only screen and (min-width: 320px) {
-  .routes-container {
-  }
-  
-  .routes {
-    display: none;
-  }
-
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .menu-icon {
     display: inline-block;
     cursor: pointer;
   }
 
-  
   .top, .mid, .last {
     width: 35px;
     height: 5px;
@@ -523,11 +512,60 @@ hr, .skills-con {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 81px;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  } */
+
+  /* .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  } */
+
+  .routes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    margin-top: 30px;
+    font-size: 32px;
+  }
+
+  .routes li {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 13px;
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .routes-container {
-    width: 35%;
+    width: 45%;
   }
 
   .menu-icon {
@@ -535,6 +573,9 @@ hr, .skills-con {
   }
 
   .routes {
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+    padding: 10px 12px;
   }
 }
