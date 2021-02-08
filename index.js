@@ -22,7 +22,7 @@ if (width < 768) {
     const links = ['Home', 'Portfolio', 'About', 'Contact'];
     if (links.includes(e.target.textContent)) {
       toggleChange();
-      overlay.style.width = '0%'
+      openOrCloseOverlay();
     }
   });
 }
