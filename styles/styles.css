@@ -184,7 +184,7 @@ img {
 
 /* portfolio section */
 .works {
-  padding: 7.5em 1.5em;
+  padding: 7.5em 1.5em 4em;
   background: #fff;
 }
 
@@ -212,7 +212,7 @@ img {
   /* height: 180px; */
 }
 
-.view .app-desc {
+.view .app-desc, .list-short-desc, .about-text, .get-project {
   color: #091E42;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -262,7 +262,7 @@ img {
 .box {
   margin: 1.5em 0;
   position: relative;
-  height: 25em;
+  height: 21em;
 }
 
 .first {
@@ -304,7 +304,7 @@ img {
 }
 
 .list-short-desc {
-  font-family: 'Inter', sans-serif;
+  color: #fff;
   font-size: 15px;
   word-spacing: 2px;
   line-height: 1.3;
@@ -325,6 +325,18 @@ img {
 /* common list styles */
 .list-btn {
   width: 100%;
+}
+
+/* about section */
+.about-text {
+  color: #fff;
+  padding: 1.5em 0;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.about-image {
+  transform: scale(1.5) translate(50%, -17%);
 }
 
 @media only screen and (min-width: 768px) {
