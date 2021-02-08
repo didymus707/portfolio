@@ -114,7 +114,7 @@
   width: 100%;
   background: #1C1A19;
   color: #fff;
-  padding: 120px 0;
+  padding-top: 7.5em;
   overflow-x: hidden;
 }
 
@@ -213,7 +213,7 @@ img {
 }
 
 /* common styles */
-.view .app-desc, .list-short-desc, .about-text, .get-project, .skills-con {
+.view .app-desc, .list-short-desc, .about-text, .get-project, .skills-con, .contact-con, .copyright {
   color: #091E42;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -407,15 +407,92 @@ hr {
 }
 
 .lang-title, .frame-title, .tools-title, .soft-title {
-  font-family: 'Inter', sans-serif;
   font-size: 20px;
   margin-left: 8px;
 }
 
 .skills-con li {
-  margin-bottom: 12px;
-  font-family: 'Inter', sans-serif;
+  margin-bottom: 1.5em;
   font-size: 15px;
+}
+
+.contact, .footer {
+  background: #fff;
+  padding: 3.5em 1.5em 0;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.form-container {
+  padding-top: 4em;
+}
+
+.top-level {
+  display: none;
+}
+
+#fullname, #email {
+  width: 96%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  margin-bottom: 1.1em;
+}
+
+#textarea {
+  background: #FBF8F7;
+  border: none;
+  padding: 12px;
+  width: 89%;
+  margin: 0.8em 0 1.5em;
+}
+
+#getintouch {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 130px;
+  padding: 12px;
+  color: #fff;
+  background: #F55800;
+  border: none;
+}
+
+/* footer */
+.soc-links {
+  border-top: 1px solid #c7c7c7;
+  padding: 20px;
+}
+
+.footer-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc li {
+  padding-right: 14px;
+}
+
+.footer-soc img {
+  width: 70%;
+  filter: brightness(0.5);
+}
+
+.copyright {
+  text-align: center;
+  padding: 1em 0;
+  color: #f55b00;
+  font-size: 12px;
+}
+
+.copyright hr {
+  width: 9%;
+  border-block-color: #F55800;
 }
 
 @media only screen and (min-width: 768px) {
