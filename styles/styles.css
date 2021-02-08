@@ -335,6 +335,10 @@ img {
   letter-spacing: 1px;
 }
 
+.get-project {
+  width: 135px;
+}
+
 .about-image {
   transform: scale(1.5) translate(50%, -17%);
 }
