@@ -212,11 +212,14 @@ img {
   /* height: 180px; */
 }
 
-.view .app-desc, .list-short-desc, .about-text, .get-project {
+/* common styles */
+.view .app-desc, .list-short-desc, .about-text, .get-project, .skills-con {
   color: #091E42;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
 }
+
+/* common styles */
 
 .app-desc {
   padding-top: 1.5em;
@@ -328,6 +331,10 @@ img {
 }
 
 /* about section */
+.about-me-con {
+  padding: 4em 0;
+}
+
 .about-text {
   color: #fff;
   padding: 1.5em 0;
@@ -341,6 +348,74 @@ img {
 
 .about-image {
   transform: scale(1.5) translate(50%, -17%);
+}
+
+hr {
+  width: 80%;
+}
+
+.skills-con {
+  color: #fff;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.lang-header, .frame-header, .tools-header, .soft-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.3em 0;
+}
+
+.diamond {
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: #F55800;
+  position: relative;
+  top: -8px;
+}
+
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top-color: #F55800;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background: #F55800;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F55800;
+}
+
+.rect {
+  width: 20px;
+  height: 10px;
+  background: #F55800;
+}
+
+.lang-title, .frame-title, .tools-title, .soft-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.skills-con li {
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 768px) {
