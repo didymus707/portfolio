@@ -209,7 +209,7 @@ img {
 
 .app-image-con {
   border: 15px solid #f28729;
-  height: 180px;
+  /* height: 180px; */
 }
 
 .view .app-desc {
@@ -262,6 +262,7 @@ img {
 .box {
   margin: 1.5em 0;
   position: relative;
+  height: 25em;
 }
 
 .first {
@@ -287,6 +288,31 @@ img {
   background-color: transparent;
   color: transparent;
   border: none;
+}
+
+.list-app-desc:hover li {
+  border: none;
+}
+
+.list-app-desc > :nth-child(-n+3) {
+  padding: 0 15px 12px;
+}
+
+.list-app-name {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+}
+
+.list-short-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  word-spacing: 2px;
+  line-height: 1.3;
+}
+
+.list-langs-con {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-langs-con > li {
