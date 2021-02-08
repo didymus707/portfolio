@@ -436,10 +436,10 @@ hr {
 }
 
 #fullname, #email {
-  width: 96%;
+  width: 93%;
   border: none;
   border-bottom: 1px solid #e0e0e0;
-  padding: 10px 0;
+  padding: 12px 0;
   margin-bottom: 1.1em;
 }
 
@@ -447,7 +447,7 @@ hr {
   background: #FBF8F7;
   border: none;
   padding: 12px;
-  width: 89%;
+  width: 90%;
   margin: 0.8em 0 1.5em;
 }
 
