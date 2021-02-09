@@ -15,19 +15,21 @@
 
 .navbar a {
   color: #fff;
+  padding: 12px;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  background: #FF6B00;
-  transition: all .4s ease;
+  background: #202121;
+  color: #f1f1f1;
+  transition: all .4s ease-in-out;
 }
 
 /* navcontainer */
 .navcontainer {
   display: flex;
   align-items: center;
-  padding: 1em;
+  padding: 1em;  
 }
 
 .navcontainer > :last-child {
@@ -82,13 +84,9 @@
   width: 100%;
 }
 
-.overlay a {
-  color: #818181;
-  transition: 0.3s;
-} 
-
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
+  transition: all .4s ease-in-out;
 }
 
 .routes {
@@ -513,18 +511,106 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  .navcontainer {
+    display: flex;
+    width: 80%;
+    padding: 0;
+  }
+
+  .name {
+    padding: 0.6em 0.75em 0.6em 9em;
+  }
+
   .routes-container {
-    width: 45%;
+    width: 25%;
   }
 
   .menu-icon {
     display: none;
   }
 
+  .overlay {
+    position: relative;
+    top: unset;
+    height: unset;
+    background-color: unset;
+    overflow-x: unset;
+    transition: unset;
+    z-index: unset;
+    width: 100%;
+  }
+
+  .overlay a {
+    display: flex;
+    color: #fff;
+  }
+
   .routes {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: unset;
+  }
+
+  .routes li {
+    border: none;
+  }
+
+  .far {
+    padding-left: 8px;
+  }
+
+  /* main--top section */
+  .top-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-contacts {
+    order: 0;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .soc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .soc > li {
+    padding-bottom: 14px;
+  }
+
+  /* headline-container */
+  .headline-container {
+    width: 30%;
+    padding-top: 6em;
+  }
+
+  .desc {
+    font-size: 72px;
+  }
+
+  .supp-text {
+    font-size: 25px;
+  }
+
+  .pri-text {
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  /* .image-con */
+  .image-con {
+    width: 30%;
+    transform: scale(1.8, 1.2) translate(29%, -12%);
   }
 }
