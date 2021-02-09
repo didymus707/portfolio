@@ -274,6 +274,24 @@ img {
   background: center / contain url('../images/projects/weatherapp.png');
 }
 
+.second {
+  display: flex;
+  align-items: flex-end;
+  background: center / contain url('../images/projects/ttt.png');
+}
+
+.third {
+  display: flex;
+  align-items: flex-end;
+  background: center / cover url('../images/projects/buzzers.png');
+}
+
+.fourth {
+  display: flex;
+  align-items: flex-end;
+  background: center / cover url('../images/projects/memory.png');
+}
+
 .list-app-desc {
   background-color: rgba(19, 36, 35, 0.9);
   display: flex;
