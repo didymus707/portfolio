@@ -254,12 +254,132 @@ img {
   background: #F55800;
   padding: 12px;
   border: none;
+  color: #fff;
 }
 
 .see-project a {
   color: #fff;
   text-decoration: none;
 }
+
+/* modal styles */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 6.3em;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #888;
+  width: 80%;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-header {
+  display: flex;
+  padding: 0 16px;
+  color: white;
+}
+
+.left-con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-title {
+  color: #091E42;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+.modal-techs {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #3C3A39;
+  margin-top: 16px;
+  padding-bottom: 10px;
+}
+
+.modal-techs > li {
+  padding: 2px 6px;
+  margin-bottom: 7px;
+}
+
+.close {
+  transform: scale(3) translate(1%, 31%);
+  color: black;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-details {
+  padding-top: 0.7em;
+}
+
+.modal-desc {
+  font-family: 'Inter', sans-serif;
+  color: #344563;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.btns {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns li {
+  flex-basis: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btns img {
+  width: 15%;
+}
+
+.git-icon img {
+  filter: brightness(140%);
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+/* modal styles */
 
 /* list */
 .box {
@@ -942,6 +1062,15 @@ hr {
   .image-con {
     width: 30%;
     transform: scale(1.8, 1.2) translate(29%, -12%);
+  }
+
+  .app-desc {
+    flex-basis: 38%;
+    padding-right: 8em;
+  }
+
+  .box {
+    flex-basis: 32%;
   }
 
   .contact-con {
