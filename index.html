@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Didymus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&family=Poppins:wght@400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navcontainer">
+      <div class="name">
+        <h3>
+          <a href="#home">Adewale Orotayo</a>
+        </h3>
+      </div>
+      <div class="routes-container">
+        <div class="menu-icon">
+          <div class="top"></div>
+          <div class="mid"></div>
+          <div class="last"></div>
+        </div>
+
+        <div id="open-routes" class="overlay">
+          <ul class="routes">
+            <li class="link-home">
+              <a href="#home">Home</a>
+            </li>
+            <li class="link-portfolio">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="link-about">
+              <a href="#about">About</a>
+            </li>
+            <li class="link-contact">
+              <a href="#contact">Contact<i class="far fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main id="home" class="main">
+    <section class="top-section">
+      <aside class="social-contacts">
+        <ul class="soc">
+          <li class="gh">
+            <a href="https://github.com/didymus707" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/github.svg" alt="Github icon">
+            </a>
+          </li>
+          <li class="in">
+            <a href="https://www.linkedin.com/in/adewale-thomas-orotayo/" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/in.svg" alt="Linkedin icon">
+            </a>
+          </li>
+          <li class="al">
+            <a href="https://angel.co/u/didymus" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/al.svg" alt="Angel List icon">
+            </a>
+          </li>
+          <li class="twt">
+            <a href="https://twitter.com/didy707" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/tt.svg" alt="Twitter icon">
+            </a>
+          </li>
+          <li class="md">
+            <a href="http://didymus707.medium.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/md.svg" alt="Medium icon">
+            </a>
+          </li>  
+        </ul>
+      </aside>
+
+      <header class="headline-container">
+        <div class="headline-contents">
+          <h1 class="desc">Hey There. I'm Adewale</h1>
+          <h3 class="supp-text">I'm a Software Developer</h3>
+          <p class="pri-text">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
+            don’t hestiate to contact me.</p>
+        </div>
+      </header>
+
+      <div class="image-con">
+        <img src="images/Illustration-header.svg" alt="Vector Image" class="img">
+      </div>
+    </section>
+
+    <section id="portfolio" class="works">
+      <div class="portfolio-container">
+        <header class="h2">
+          <h2 class="recent-works">
+            My Recent Works
+            <span class="line"></span>
+          </h2>
+        </header>
+        <div class="gallery">
+          <div class="view">
+            <div class="app-image-con">
+              <img src="images/projects/menu.png" alt="Earth Defenders, A game built with Javascript and Phaser Library" class="main-app">
+            </div>
+            <article class="app-desc">
+              <h2 class="app-name">Earth Defenders</h2>
+              <p class="short-desc">This is a Capstone project from the Microverse Curriculum. These projects are taken at the end of a curriculum. In this project I'll be using Phaser3 framework to build a space shooter game</p>
+              <ul class="langs-con">
+                <li class="html">html</li>
+                <li class="css">css</li>
+                <li class="js">javascript</li>
+                <li class="webpack">webpack</li>
+                <li class="phaser">phaser 3</li>
+              </ul>
+              <button class="see-project open-modal">See Project
+                <div class="modal">
+                  <div class="modal-content">
+                    <header class="modal-header">
+                      <div class="left-con">
+                        <h2 class="modal-title">Earth Defenders</h2>
+                        <ul class="langs-con modal-techs">
+                          <li class="html">html</li>
+                          <li class="css">css</li>
+                          <li class="js">javascript</li>
+                          <li class="webpack">webpack</li>
+                          <li class="phaser">phaser 3</li>
+                        </ul>
+                      </div>
+                      <span class="close">&times;</span>
+                    </header>
+                    <div class="modal-body">
+                      <div class="modal-image">
+                        <img src="images/projects/menu.png" alt="Earth Defenders, A game built with Javascript and Phaser Library" class="main-app">
+                      </div>
+                      <div class="modal-details">
+                        <div class="modal-text">
+                          <p class="modal-desc">This is a Capstone project from the Microverse Curriculum. These projects are taken at the end of a curriculum. In this project I'll be using Phaser3 framework to build a space shooter game</p>
+                        </div>
+                        <ul class="btns">
+                          <li class="see-project live">
+                            <a href="https://earthdefenders.netlify.app/" target="_blank" rel="noopener noreferrer">See Live</a>
+                            <img src="./images/icon.svg" alt="live project icon">
+                          </li>
+                          <li class="see-project git-icon">
+                            <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                            <img src="./images/soc/github.svg" alt="Github icon">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </article>
+          </div>
+          <div class="list">
+            <div class="first box">
+              <article class="list-app-desc">
+                <h2 class="list-app-name">Weather App</h2>
+                <p class="list-short-desc">At the end of a lesson, the knowledge gained is tested by building an application from the technologies and techniques learnt</p>
+                <ul class="list-langs-con">
+                  <li class="js">javascript</li>
+                  <li class="api">fetch api</li>
+                  <li class="webpack">webpack</li>
+                </ul>
+                <button class="see-project open-modal list-btn">See Project
+                  <div class="modal">
+                    <div class="modal-content">
+                      <header class="modal-header">
+                        <div class="left-con">
+                          <h2 class="modal-title">Weather App</h2>
+                          <ul class="langs-con modal-techs">
+                            <li class="css">css</li>
+                            <li class="js">javascript</li>
+                            <li class="fetch">fetch Api</li>
+                            <li class="webpack">webpack</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </header>
+                      <div class="modal-body">
+                        <div class="modal-image">
+                          <img src="images/projects/weatherapp.png" alt="Earth Defenders, A game built with Javascript and Phaser Library" class="main-app">
+                        </div>
+                        <div class="modal-details">
+                          <div class="modal-text">
+                            <p class="modal-desc">This is a Capstone project from the Microverse Curriculum. These projects are taken at the end of a curriculum. In this project I'll be using Phaser3 framework to build a space shooter game</p>
+                          </div>
+                          <ul class="btns">
+                            <li class="see-project live">
+                              <a href="https://didymus707.github.io/Weather-App/" target="_blank" rel="noopener noreferrer">See Live</a>
+                              <img src="./images/icon.svg" alt="live project icon">
+                            </li>
+                            <li class="see-project git-icon">
+                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <img src="./images/soc/github.svg" alt="Github icon">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="second box">
+              <article class="list-app-desc">
+                <h2 class="list-app-name">Tic Tac Toe</h2>
+                <p class="list-short-desc">At the end of a lesson, the knowledge gained is tested by building an application from the technologies and techniques learnt</p>
+                <ul class="list-langs-con">
+                  <li class="bootstrap">bootstrap</li>
+                  <li class="js">javascript</li>
+                  <li class="webpack">webpack</li>
+                </ul>
+                <button class="see-project open-modal list-btn">See Project
+                  <div class="modal">
+                    <div class="modal-content">
+                      <header class="modal-header">
+                        <div class="left-con">
+                          <h2 class="modal-title">Ti Tac Toe</h2>
+                          <ul class="langs-con modal-techs">
+                            <li class="bootstrap">bootstrap</li>
+                            <li class="js">javascript</li>
+                            <li class="webpack">webpack</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </header>
+                      <div class="modal-body">
+                        <div class="modal-image">
+                          <img src="images/projects/ttt.png" alt="Earth Defenders, A game built with Javascript and Phaser Library" class="main-app">
+                        </div>
+                        <div class="modal-details">
+                          <div class="modal-text">
+                            <p class="modal-desc">This is a Capstone project from the Microverse Curriculum. These projects are taken at the end of a curriculum. In this project I'll be using Phaser3 framework to build a space shooter game</p>
+                          </div>
+                          <ul class="btns">
+                            <li class="see-project live">
+                              <a href="https://didymus707.github.io/ticTacToe/" target="_blank" rel="noopener noreferrer">See Live</a>
+                              <img src="./images/icon.svg" alt="live project icon">
+                            </li>
+                            <li class="see-project git-icon">
+                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <img src="./images/soc/github.svg" alt="Github icon">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="third box">
+              <article class="list-app-desc">
+                <h2 class="list-app-name">Buzzers</h2>
+                <p class="list-short-desc">At the end of a lesson, the knowledge gained is tested by building an application from the technologies and techniques learnt</p>
+                <ul class="list-langs-con">
+                  <li class="ruby-on-rails">ruby on rails</li>
+                  <li class="bulma">bulma</li>
+                  <li class="postgresql">postgresql</li>
+                </ul>
+                <button class="see-project open-modal list-btn">See Project
+                  <div class="modal">
+                    <div class="modal-content">
+                      <header class="modal-header">
+                        <div class="left-con">
+                          <h2 class="modal-title">Buzzers</h2>
+                          <ul class="langs-con modal-techs">
+                            <li class="ruby-on-rails">ruby on rails</li>
+                            <li class="bulma">bulma</li>
+                            <li class="postgresql">postgresql</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </header>
+                      <div class="modal-body">
+                        <div class="modal-image">
+                          <img src="images/projects/buzzers.png" alt="Earth Defenders, A game built with Javascript and Phaser Library" class="main-app">
+                        </div>
+                        <div class="modal-details">
+                          <div class="modal-text">
+                            <p class="modal-desc">This is a Capstone project from the Microverse Curriculum. These projects are taken at the end of a curriculum. In this project I'll be using Phaser3 framework to build a space shooter game</p>
+                          </div>
+                          <ul class="btns">
+                            <li class="see-project live">
+                              <a href="https://pure-dawn-14243.herokuapp.com/" target="_blank" rel="noopener noreferrer">See Live</a>
+                              <img src="./images/icon.svg" alt="live project icon">
+                            </li>
+                            <li class="see-project git-icon">
+                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <img src="./images/soc/github.svg" alt="Github icon">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="fourth box">
+              <article class="list-app-desc">
+                <h2 class="list-app-name">Memory Game</h2>
+                <p class="list-short-desc">At the end of a lesson, the knowledge gained is tested by building an application from the technologies and techniques learnt</p>
+                <ul class="list-langs-con">
+                  <li class="html">html</li>
+                  <li class="js">javascript</li>
+                </ul>
+                <button class="see-project open-modal list-btn">See Project
+                  <div class="modal">
+                    <div class="modal-content">
+                      <header class="modal-header">
+                        <div class="left-con">
+                          <h2 class="modal-title">Weather App</h2>
+                          <ul class="langs-con modal-techs">
+                            <li class="css">css</li>
+                            <li class="js">javascript</li>
+                            <li class="fetch">fetch Api</li>
+                            <li class="webpack">webpack</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </header>
+                      <div class="modal-body">
+                        <div class="modal-image">
+                          <img src="images/projects/memory.png" alt="Earth Defenders, A game built with Javascript and Phaser Library" class="main-app">
+                        </div>
+                        <div class="modal-details">
+                          <div class="modal-text">
+                            <p class="modal-desc">This is a Capstone project from the Microverse Curriculum. These projects are taken at the end of a curriculum. In this project I'll be using Phaser3 framework to build a space shooter game</p>
+                          </div>
+                          <ul class="btns">
+                            <li class="see-project live">
+                              <a href="https://didymus707.github.io/Memory-Game-FEND/" target="_blank" rel="noopener noreferrer">See Live</a>
+                              <img src="./images/icon.svg" alt="live project icon">
+                            </li>
+                            <li class="see-project git-icon">
+                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <img src="./images/soc/github.svg" alt="Github icon">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-me section">
+      <section class="about-me-con">
+        <div class="about-me-content">
+          <header class="headline-container about-head">
+            <div class="headline-contents">
+              <h1 class="desc">About Me</h1>
+              <p class="pri-text about-text">Hi, I am Adewale, finding patterns in problems and providing solutions to them are the highlight of my day. I had a background in Biochemistry and part of the skill I took from there is knowing the root cause of a problem and finding solution to it. This skill has helped me in particular since I started programming as I must design and build an application or website that is fail-safe. <br>  I am skilled in Technical skills such as HTML & CSS, JavaScript, Ruby on Rails, React & Redux and Soft skills such as Communication, Team Collaboration, Pair Programming, Remote Working. I can work as a front end, back end or in the full stack position and I am open to learning also. <br> In my free time, I play video games or play the guitar. I am open to new opportunities and challenges.</p>
+              <button class="see-project get-project">
+                <a href="images/rect.svg" download='Adewale Orotayo'>Get my Resume</a>
+              </button>
+            </div>
+          </header>
+          <div class="about-image"> 
+            <img src="images/about.svg" alt="Vector Image" class="img">
+          </div>
+        </div>
+        <hr>
+        <div class="skills-con">
+          <div class="lang-container">
+            <header class="lang-header">
+              <div class="diamond"></div>
+              <h6 class="lang-title">Language</h6>
+            </header>
+            <ul class="lang">
+              <li class="javascript">Javascript</li>
+              <li class="ruby">Ruby</li>
+              <li class="css">Css</li>
+              <li class="html">Html</li>
+            </ul>
+          </div>
+          <div class="frame-container">
+            <header class="frame-header">
+              <div class="square"></div>
+              <h6 class="frame-title">Frameworks</h6>
+            </header>
+            <ul class="frameworks">
+              <li class="react">React</li>
+              <li class="nodejs">NodeJs</li>
+              <li class="ruby-on-rails">Ruby on Rails</li>
+              <li class="rspec">RSpec</li>
+              <li class="capybara">Capybara</li>
+              <li class="jest">Jest</li>
+              <li class="bootstrap">Bootstrap</li>
+              <li class="bulma">Bulma</li>
+            </ul>
+          </div>
+          <div class="tools-container">
+            <header class="tools-header">
+              <div class="circle"></div>
+              <h6 class="tools-title">Tools</h6>
+            </header>
+            <ul class="tools">
+              <li class="git">Git</li>
+              <li class="github">Github</li>
+              <li class="heroku">Heroku</li>
+              <li class="netlify">Netlify</li>
+              <li class="pp">Pair Programming</li>
+            </ul>
+          </div>
+          <div class="soft-skills-container">
+            <header class="soft-header">
+              <div class="rect"></div>
+              <h6 class="soft-title">Soft Skills</h6>
+            </header> 
+            <ul class="soft">
+              <li class="good-comm">Good Communication</li>
+              <li class="rem">Remote Work</li>
+              <li class="prob">Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <section id="contact" class="contact">
+      <div class="contact-con">
+        <div class="text">
+          <p class="text-para">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        </div>
+        <div class="form-container">
+          <form action="" method="post" class="form">
+            <div class="top-level">
+              <input type="text" id="firstname" placeholder="First Name...">
+              <input type="text" id="lastname" placeholder="Last Name...">
+            </div>
+            <input type="text" id="fullname" placeholder="Full name">
+            <input type="email" name="email" id="email" placeholder="Email...">
+            <textarea name="" cols="30" rows="6" id="textarea" placeholder="Your Text Here.."></textarea>
+            <input type="submit" id="getintouch" value="Get in Touch">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="soc-links">
+        <ul class="footer-soc">
+          <li class="gh">
+            <a href="https://github.com/didymus707" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/github.svg" alt="Github icon">
+            </a>
+          </li>
+          <li class="in">
+            <a href="https://www.linkedin.com/in/adewale-thomas-orotayo/" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/in.svg" alt="Linkedin icon">
+            </a>
+          </li>
+          <li class="al">
+            <a href="https://angel.co/u/didymus" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/al.svg" alt="Angel List icon">
+            </a>
+          </li>
+          <li class="twt">
+            <a href="https://twitter.com/didy707" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/tt.svg" alt="Twitter icon">
+            </a>
+          </li>
+          <li class="md">
+            <a href="http://didymus707.medium.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/soc/md.svg" alt="Medium icon">
+            </a>
+          </li>  
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <hr>
+        &copy; Adewale Orotayo 2021
+      </div>
+    </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
