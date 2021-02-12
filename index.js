@@ -1,9 +1,9 @@
 const menuIcon = document.querySelector('.menu-icon');
 const overlay = document.querySelector('.overlay');
 const routes = document.querySelector('.routes');
-const portCon = document.querySelector('.portfolio-container');
+const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('.modal');
-const close = document.querySelector('.close');
+const closeClass = document.querySelector('.close');
 const getScreenWidth = () => window.innerWidth;
 const width = getScreenWidth();
 
@@ -30,26 +30,16 @@ if (width < 768) {
   });
 }
 
-const openModal = () => {
-  modal.style.display = 'block';
-}
-
-const closeModal = () => {
-  modal.style.display = 'none';
-}
-
-portCon.addEventListener('click', e => {
-  console.log(e.target.parentElement);
-  if (e.target.className === 'see-project') {
-    console.log('I was just clicked');
-    openModal();
+gallery.addEventListener('click', e => {
+  if (e.target.classList.contains('open-modal')) {
+    e.target.firstElementChild.style.display = 'block';
   }
 });
 
-close.addEventListener('click', closeModal);
-
 window.onclick = e => {
-  if (e.target == modal) {
-    modal.style.display = "none";
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+  } else if (e.target.className === 'close') {
+    e.target.offsetParent.offsetParent.style.display = 'none';
   }
 }
