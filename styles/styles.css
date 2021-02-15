@@ -255,6 +255,7 @@ img {
   padding: 12px;
   border: none;
   color: #fff;
+  outline: white;
 }
 
 .see-project a {
@@ -422,16 +423,6 @@ img {
   color: #fff;
   justify-content: flex-end;
   transition: all 0.5s ease-in-out;
-}
-
-.list-app-desc:hover {
-  background-color: transparent;
-  color: transparent;
-  border: none;
-}
-
-.list-app-desc:hover > li {
-  border: none;
 }
 
 .list-app-desc > :nth-child(-n+3) {
@@ -787,10 +778,6 @@ hr {
     word-spacing: 3px;
   }
 
-  .list-app-desc:hover .list-short-desc {
-    color: transparent;
-  }
-
   .modal-body {
     display: flex;
     /* justify-content: space-between; */
@@ -952,7 +939,8 @@ hr {
   }
 
   .box {
-    height: 24em;
+    height: 25em;
+    flex-basis: 32%;
   }
 
   .list-short-desc {
