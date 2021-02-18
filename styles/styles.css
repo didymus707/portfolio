@@ -563,7 +563,7 @@ hr {
   display: none;
 }
 
-#fullname, #email {
+#fullname, #subject, #email {
   width: 93%;
   border: none;
   border-bottom: 1px solid #e0e0e0;
@@ -974,22 +974,8 @@ hr {
     flex-direction: column;
     justify-content: space-between;
   }
-  
-  .top-level {
-    display: flex;
-    justify-content: space-between;
-    width: 97%;
-  }
 
-  #fullname {
-    display: none;
-  }
-
-  #firstname, #lastname {
-    width: 40%;
-  }
-  
-  #firstname, #lastname, #email {
+  #fullname, #subject, #email {
     border: none;
     border-bottom: 1px solid #c2bdbd;
     padding: 10px;

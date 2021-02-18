@@ -1,9 +1,6 @@
 const menuIcon = document.querySelector('.menu-icon');
 const overlay = document.querySelector('.overlay');
-const routes = document.querySelector('.routes');
 const gallery = document.querySelector('.gallery');
-const modal = document.querySelector('.modal');
-const closeClass = document.querySelector('.close');
 const getScreenWidth = () => window.innerWidth;
 const width = getScreenWidth();
 
