@@ -93,7 +93,7 @@
       <div class="portfolio-container">
         <header class="h2">
           <h2 class="recent-works">
-            My Recent Works
+            My Recent Work
             <span class="line"></span>
           </h2>
         </header>
@@ -192,7 +192,7 @@
                               <img src="./images/icon.svg" alt="live project icon">
                             </li>
                             <li class="see-project git-icon">
-                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <a href="https://github.com/didymus707/Weather-App" target="_blank" rel="noopener noreferrer">See Source</a>
                               <img src="./images/soc/github.svg" alt="Github icon">
                             </li>
                           </ul>
@@ -218,7 +218,7 @@
                     <div class="modal-content">
                       <header class="modal-header">
                         <div class="left-con">
-                          <h2 class="modal-title">Ti Tac Toe</h2>
+                          <h2 class="modal-title">Tic Tac Toe</h2>
                           <ul class="langs-con modal-techs">
                             <li class="bootstrap">bootstrap</li>
                             <li class="js">javascript</li>
@@ -241,7 +241,7 @@
                               <img src="./images/icon.svg" alt="live project icon">
                             </li>
                             <li class="see-project git-icon">
-                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <a href="https://github.com/didymus707/ticTacToe" target="_blank" rel="noopener noreferrer">See Source</a>
                               <img src="./images/soc/github.svg" alt="Github icon">
                             </li>
                           </ul>
@@ -290,7 +290,7 @@
                               <img src="./images/icon.svg" alt="live project icon">
                             </li>
                             <li class="see-project git-icon">
-                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <a href="https://github.com/didymus707/Buzzers" target="_blank" rel="noopener noreferrer">See Source</a>
                               <img src="./images/soc/github.svg" alt="Github icon">
                             </li>
                           </ul>
@@ -315,7 +315,7 @@
                     <div class="modal-content">
                       <header class="modal-header">
                         <div class="left-con">
-                          <h2 class="modal-title">Weather App</h2>
+                          <h2 class="modal-title">Memory Game</h2>
                           <ul class="langs-con modal-techs">
                             <li class="css">css</li>
                             <li class="js">javascript</li>
@@ -339,7 +339,7 @@
                               <img src="./images/icon.svg" alt="live project icon">
                             </li>
                             <li class="see-project git-icon">
-                              <a href="https://github.com/didymus707/Space-Shooter-With-Phaser3" target="_blank" rel="noopener noreferrer">See Source</a>
+                              <a href="https://github.com/didymus707/Memory-Game-FEND" target="_blank" rel="noopener noreferrer">See Source</a>
                               <img src="./images/soc/github.svg" alt="Github icon">
                             </li>
                           </ul>
@@ -361,9 +361,9 @@
           <header class="headline-container about-head">
             <div class="headline-contents">
               <h1 class="desc">About Me</h1>
-              <p class="pri-text about-text">Hi, I am Adewale, finding patterns in problems and providing solutions to them are the highlight of my day. I had a background in Biochemistry and part of the skill I took from there is knowing the root cause of a problem and finding solution to it. This skill has helped me in particular since I started programming as I must design and build an application or website that is fail-safe. <br>  I am skilled in Technical skills such as HTML & CSS, JavaScript, Ruby on Rails, React & Redux and Soft skills such as Communication, Team Collaboration, Pair Programming, Remote Working. I can work as a front end, back end or in the full stack position and I am open to learning also. <br> In my free time, I play video games or play the guitar. I am open to new opportunities and challenges.</p>
+              <p class="pri-text about-text">Hi, I am Adewale, finding patterns in problems and providing solutions to them are the highlight of my day. I had a background in biochemistry and part of the skill I took from there is knowing the root cause of a problem and finding a solution to it. This skill has helped me in particular since I started programming as I must design and build an application or website that is fail-safe. <br> I am skilled in technical skills such as HTML & CSS, JavaScript, Ruby on Rails, React & Redux and soft skills such as communication, team collaboration, pair programming, remote working. I can work as a front end, back end or in the full stack position and I am open to learning also. <br> In my free time, I play video games or play the guitar. I am open to new opportunities and challenges.</p>
               <button class="see-project get-project">
-                <a href="images/rect.svg" download='Adewale Orotayo'>Get my Resume</a>
+                <a href="images/resume.pdf" download='Adewale Orotayo'>Get my Resume</a>
               </button>
             </div>
           </header>
@@ -435,15 +435,13 @@
           <p class="text-para">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         </div>
         <div class="form-container">
-          <form action="" method="post" class="form">
-            <div class="top-level">
-              <input type="text" id="firstname" placeholder="First Name...">
-              <input type="text" id="lastname" placeholder="Last Name...">
-            </div>
-            <input type="text" id="fullname" placeholder="Full name">
+          <form action="https://formspree.io/f/xgepbnoq" method="post" class="form">
+            <input type="text" name="fullname" id="fullname" placeholder="Full name">
+            <input type="text" name="subject" id="subject" placeholder="Subject...">
             <input type="email" name="email" id="email" placeholder="Email...">
-            <textarea name="" cols="30" rows="6" id="textarea" placeholder="Your Text Here.."></textarea>
+            <textarea name="message" cols="30" rows="6" id="textarea" placeholder="Your Text Here.."></textarea>
             <input type="submit" id="getintouch" value="Get in Touch">
+            <div id="status"></div>
           </form>
         </div>
       </div>
@@ -486,6 +484,8 @@
       </div>
     </footer>
   </main>
-  <script src="index.js"></script>
+  <script type='text/javascript' src='src/config.js'></script>
+  <!-- <script type='text/javascript' src='src/server.js'></script> -->
+  <script src="src/index.js"></script>
 </body>
 </html>

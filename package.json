@@ -26,5 +26,11 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.17.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mailgun-js": "^0.22.0",
+    "nodemailer": "^6.4.18",
+    "nodemailer-mailgun-transport": "^2.0.2"
   }
 }

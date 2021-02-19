@@ -255,6 +255,7 @@ img {
   padding: 12px;
   border: none;
   color: #fff;
+  outline: white;
 }
 
 .see-project a {
@@ -424,16 +425,6 @@ img {
   transition: all 0.5s ease-in-out;
 }
 
-.list-app-desc:hover {
-  background-color: transparent;
-  color: transparent;
-  border: none;
-}
-
-.list-app-desc:hover > li {
-  border: none;
-}
-
 .list-app-desc > :nth-child(-n+3) {
   padding: 0 15px 12px;
 }
@@ -572,7 +563,7 @@ hr {
   display: none;
 }
 
-#fullname, #email {
+#fullname, #subject, #email {
   width: 93%;
   border: none;
   border-bottom: 1px solid #e0e0e0;
@@ -597,6 +588,43 @@ hr {
   color: #fff;
   background: #F55800;
   border: none;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 /* footer */
@@ -787,10 +815,6 @@ hr {
     word-spacing: 3px;
   }
 
-  .list-app-desc:hover .list-short-desc {
-    color: transparent;
-  }
-
   .modal-body {
     display: flex;
     /* justify-content: space-between; */
@@ -952,7 +976,8 @@ hr {
   }
 
   .box {
-    height: 24em;
+    height: 25em;
+    flex-basis: 32%;
   }
 
   .list-short-desc {
@@ -986,22 +1011,8 @@ hr {
     flex-direction: column;
     justify-content: space-between;
   }
-  
-  .top-level {
-    display: flex;
-    justify-content: space-between;
-    width: 97%;
-  }
 
-  #fullname {
-    display: none;
-  }
-
-  #firstname, #lastname {
-    width: 40%;
-  }
-  
-  #firstname, #lastname, #email {
+  #fullname, #subject, #email {
     border: none;
     border-bottom: 1px solid #c2bdbd;
     padding: 10px;
