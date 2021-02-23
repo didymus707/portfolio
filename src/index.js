@@ -4,6 +4,7 @@ const gallery = document.querySelector('.gallery');
 const form = document.querySelector(".form");
 const git = document.querySelector("#getintouch");
 const status = document.querySelector("#status");
+const body = document.querySelector('body');
 const getScreenWidth = () => window.innerWidth;
 
 const width = getScreenWidth();
@@ -11,6 +12,10 @@ const width = getScreenWidth();
 const toggleChange = () => {
   menuIcon.classList.toggle('change')
 };
+
+const toggleOverflow = () => {
+  body.classList.toggle('overflow');
+}
 
 const openOrCloseOverlay = () => {
   overlay.classList.toggle('overlay-width')
