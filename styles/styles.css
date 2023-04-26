@@ -1124,6 +1124,14 @@ hr {
     flex-direction: row;
   }
 
+  .list {
+    display: flex;
+  }
+
+  .box {
+    width: 32%;
+  }
+
   .social-contacts {
     order: 0;
     width: 10%;
@@ -1171,10 +1179,7 @@ hr {
   .app-desc {
     flex-basis: 38%;
     padding-right: 8em;
-  }
-
-  .box {
-    flex-basis: 10%;
+    margin-left: 24px;
   }
 
   .contact-con {
