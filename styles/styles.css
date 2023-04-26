@@ -254,6 +254,7 @@ img {
 .langs-con {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .langs-con > li {
