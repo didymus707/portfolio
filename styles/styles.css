@@ -264,13 +264,14 @@ img {
 }
 
 .see-project {
-  width: 120px;
+  width: 100%;
   background: #f55800;
   padding: 12px;
   border: none;
   color: #fff;
   outline: white;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .see-project a {
@@ -418,18 +419,24 @@ img {
   display: flex;
   align-items: flex-end;
   background: center / contain url("../images/projects/weatherapp.png");
+  border-radius: 4px;
+  border: none;
 }
 
 .second {
   display: flex;
   align-items: flex-end;
   background: center / cover url("../images/projects/ttt.png");
+  border-radius: 4px;
+
 }
 
 .third {
   display: flex;
   align-items: flex-end;
   background: center / cover url("../images/projects/buzzers.png");
+  border-radius: 4px;
+  border: none;
 }
 
 .fourth {
@@ -449,6 +456,8 @@ img {
   color: #fff;
   justify-content: flex-end;
   transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+  border: none;
 }
 
 .list-app-desc > :nth-child(-n + 3) {
@@ -623,6 +632,7 @@ hr {
   color: #fff;
   background: #f55800;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -813,9 +823,9 @@ hr {
     margin-left: 6px;
   }
 
-  /* .app-image-con { */
-  /* border: 30px solid #f28729; */
-  /* } */
+  .app-image-con img {
+    border-radius: 8px;
+  }
 
   .app-desc {
     font-size: 16px;
@@ -1036,6 +1046,10 @@ hr {
 
   .list-langs-con {
     font-size: 19px;
+  }
+
+  .langs-con li {
+    border-radius: 4px;
   }
 
   .modal-image img {
